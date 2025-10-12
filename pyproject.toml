@@ -1,0 +1,26 @@
+[project]
+package-mode = false
+name = "recommendation-engine"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Daniel Schnurpfeil",email = "117296223+danschnurp@users.noreply.github.com"}
+]
+requires-python = ">=3.11"
+
+[tool.poetry.dependencies]
+numpy = "^1.26.4"
+pandas = "^1.5.3"
+matplotlib = ">=3.10.7"
+seaborn = ">=0.13.2"
+scikit-learn = ">=1.7.2"
+openpyxl = ">=3.1.5"
+scikit-surprise = ">=1.1.4"
+scipy = ">=1.14.1"
+tqdm = ">=4.67.1"
+mlxtend = ">=0.23.4"
+gensim = ">=4.3.3"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
