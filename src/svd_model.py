@@ -627,7 +627,7 @@ if __name__ == "__main__":
 
 
     data = prepare_data_pipeline('../Online Retail.xlsx',
-                                 split_method='user_based',
+                                 split_method='item_based',
                                  filter_products=False,
                                  top_n_products=1000
                                  )

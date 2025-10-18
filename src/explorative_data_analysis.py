@@ -428,7 +428,7 @@ def prepare_data_pipeline(filepath='Online Retail.xlsx',
 if __name__ == "__main__":
     # Run the complete pipeline
     data = prepare_data_pipeline(
-        filepath='Online Retail.xlsx',
+        filepath='../Online Retail.xlsx',
         split_method='user_based',
         filter_products=True,
         visualize=True,
