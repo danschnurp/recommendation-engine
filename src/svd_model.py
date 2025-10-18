@@ -628,7 +628,7 @@ if __name__ == "__main__":
 
     data = prepare_data_pipeline('../Online Retail.xlsx',
                                  split_method='user_based',
-                                 filter_products=True,
+                                 filter_products=False,
                                  top_n_products=1000
                                  )
     train_interactions = data['train_interactions']

@@ -513,8 +513,7 @@ def visualize_embeddings_tsne(model, n_products=500, perplexity=30,
     print(f"Original dimension: {vectors.shape[1]}")
 
     # Apply t-SNE
-    tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42,
-                n_iter=1000, verbose=0)
+    tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42, verbose=0)
     vectors_2d = tsne.fit_transform(vectors)
 
     print(f"Reduced to 2D")
@@ -631,7 +630,7 @@ def visualize_product_clusters(model, full_data, n_products=200, n_labels=30,
 
     # Apply t-SNE
     print("Applying t-SNE...")
-    tsne = TSNE(n_components=2, perplexity=30, random_state=42, n_iter=1000, verbose=0)
+    tsne = TSNE(n_components=2, perplexity=30, random_state=42, verbose=0)
     vectors_2d = tsne.fit_transform(vectors)
 
     # Create visualization
@@ -1035,7 +1034,7 @@ def visualize_clusters_with_labels(model, full_data, n_clusters=8, n_products=40
 
     # Apply t-SNE
     print("Applying t-SNE for visualization...")
-    tsne = TSNE(n_components=2, perplexity=30, random_state=42, n_iter=1000, verbose=0)
+    tsne = TSNE(n_components=2, perplexity=30, random_state=42, verbose=0)
     vectors_2d = tsne.fit_transform(vectors)
 
     # Create visualization
